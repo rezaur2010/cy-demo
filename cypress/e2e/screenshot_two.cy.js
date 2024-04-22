@@ -7,7 +7,7 @@ describe('User Role Test for Menu Navigation based on user access', () => {
   beforeEach(() => {
     cy.clearCookies();
     cy.clearLocalStorage()
-    cy.visit('/');
+    cy.visit('https://uat-apps.redcurve.com');
   });
 
   function testMenuItems(menuSelector, menuItems) {
@@ -18,14 +18,14 @@ describe('User Role Test for Menu Navigation based on user access', () => {
       cy.get(".rcs-topbar-heading-wrapper").should("be.visible").should("include.text", menuItem.title);
       cy.url().should("include", menuItem.url);
       cy.get(".nav-list.nav-list-topbar li").contains("Campaign Dashboard").click();
-      cy.chromaticSnapshot(`Menu - ${menuItem.menu}`);
+      cy.takeSnapshot(`Menu - ${menuItem.menu}`);
     });
   }
 
   function testMenuNavigation(user) {
     describe(`Testing menus and navigation for ${user.role} user`, () => {
       beforeEach(() => {
-        cy.loginAndChooseCampaign(user);
+        cy.loginAndChooseCampaign(user, 'hurd');
       });
 
       afterEach(() => {
@@ -63,7 +63,7 @@ describe('User Role Test for Menu Navigation based on user access', () => {
 
         const roleSpecificBottomMenu = createRoleSpecificMenu(user.role, 'bottomMenu');
         checkMenuPresence('.rcs-dashboard-card-title', roleSpecificBottomMenu);
-        cy.chromaticSnapshot(`Menus - ${user.role}`);
+        cy.takeSnapshot(`Menus - ${user.role}`);
       });
 
       it(`Should verify Top and Bottom menu navigation for ${user.role} user`, () => {
@@ -72,7 +72,7 @@ describe('User Role Test for Menu Navigation based on user access', () => {
 
         const roleSpecificBottomMenu = createRoleSpecificMenu(user.role, 'bottomMenu');
         testMenuItems('.rcs-dashboard-card-title', roleSpecificBottomMenu);
-        cy.chromaticSnapshot(`Menu Navigation - ${user.role}`);
+        cy.takeSnapshot(`Menu Navigation - ${user.role}`);
       });
     });
   }
