@@ -1,7 +1,7 @@
 import {
   createRoleSpecificMenu,
   users,
-} from '../../support/pageObjects/Users';
+} from '../support/users';
 
 describe('User Role Test for Menu Navigation based on user access', () => {
   beforeEach(() => {
