@@ -7,7 +7,8 @@
       "cy:open:uat": "cypress open --config baseUrl=https://uat-apps.redcurve.com --env CYPRESS_ENV=uat",
       "cy:run:qa": "cypress run --config baseUrl=https://dev-apps.redcurve.com --env CYPRESS_ENV=qa",
       "cy:run:uat": "cypress run --config baseUrl=https://uat-apps.redcurve.com --env CYPRESS_ENV=uat",
-      "cy:run:debug": "powershell -Command \"$env:ELECTRON_EXTRA_LAUNCH_ARGS='--remote-debugging-port=9222'; npx cypress run\""
+      "cy:run:debug": "powershell -Command \"$env:ELECTRON_EXTRA_LAUNCH_ARGS='--remote-debugging-port=9222'; npx cypress run\"",
+      "cy:run:chromatic": "npx chromatic --cypress --project-token=chpt_802ed688631cecb"
     },
   "devDependencies": {
     "@chromatic-com/cypress": "^0.6.6",

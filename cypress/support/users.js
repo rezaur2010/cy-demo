@@ -586,87 +586,14 @@ export const users = [
 
     {
         role: "Admin",
-        email: "rrahman@redcurve.com",
+        email: "ufumhman@ufum.com",
         uEmail: "kidreyordu@gufum.com",
         password: "Azan2637!",
     },
     {
-        role: "Expense",
-        email: "toydukespe@gufum.com",
-        uEmail: "nardizigni@gufum.com",
-        password: "Rrahman1!",
-    },
-    {
-        role: "Vortex Tally",
-        email: "tuydobiknu@gufum.com",
-        uEmail: "birtoketro@gufum.com",
-        password: "Rrahman1!",
-    },
-    {
-        role: "Vortex Lite Admin",
-        email: "sitrinirdu@gufum.com",
-        uEmail: "sistotegni@gufum.com",
-        password: "Rrahman1!",
-    },
-    {
-        role: "Division Director",
-        email: "heydirerto@gufum.com",
-        uEmail: "dirzemeydu@gufum.com",
-        password: "Rrahman1!",
-    },
-    {
-        role: "Senior Manager",
-        email: "vopsejutre@gufum.com",
-        uEmail: "yertevagno@gufum.com",
-        password: "Rrahman1!",
-    },
-    {
-        role: "Client Manager",
-        email: "burtoforku@gufum.com",
-        uEmail: "daltucikni@gufum.com",
-        password: "Rrahman1!",
-    },
-    {
-        role: "Staff",
-        email: "haltevakku@gufum.com",
-        uEmail: "kulmacerde@gufum.com",
-        password: "Rrahman1!",
-    },
-    {
-        role: "Office Manager",
-        email: "ciknulirki@gufum.com",
-        uEmail: "yurtebukne@gufum.com",
-        password: "Rrahman1!",
-    },
-    {
-        role: "Donation Depositor",
-        email: "dultonuydi@gufum.com",
-        uEmail: "yoltinospa@gufum.com",
-        password: "Rrahman1!",
-    },
-    {
-        role: "Finance Super",
-        email: "culmokordu@gufum.com",
-        uEmail: "lolmovirde@gufum.com",
-        password: "Rrahman1!",
-    },
-    {
-        role: "Donation Batcher",
-        email: "jopsokaspu@gufum.com",
-        uEmail: "yistovakni@gufum.com",
-        password: "Rrahman1!",
-    },
-
-    {
-        role: "Finance",
-        email: "lelmihurki@gufum.com",
-        uEmail: "rufyijerto@gufum.com",
-        password: "Rrahman1!",
-    },
-    {
-        role: "Donation Super",
-        email: "kerdedisto@gufum.com",
-        uEmail: "fuspiteltu@gufum.com",
-        password: "Rrahman1!",
-    },
+        role: "Admin",
+        email: "ufumman@ufum.com",
+        uEmail: "kidreyordu@gufum.com",
+        password: "Azan2637!",
+    }
 ];
